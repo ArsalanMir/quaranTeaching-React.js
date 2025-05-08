@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { BookOpen, Volume2, Info, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import image from '../assets/free.jpeg'
 
 const Hero = () => {
   const [showTafsir, setShowTafsir] = useState(false);
@@ -19,7 +20,7 @@ const Hero = () => {
 
       {/* Floating Logo / Ornament */}
       <motion.img
-        src="/crescent-logo.png" // Replace with your logo or motif
+        src={image}
         alt="Islamic logo"
         className="absolute top-10 left-10 w-16 h-16 opacity-30"
         animate={{
